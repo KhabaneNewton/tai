@@ -70,8 +70,11 @@
         <h2>Sejarah terbentuknya nama KhabaneNewton</h2>
         <p> di suatu hari, pada hari Senin-Minggu pada saat saya lagi boker tiba-tiba kepikiran nama samaran baru dan hatiku berkata "mau pake nama samaran apa ya?? ohh ya Khabane Newton", Khabane Newton itu Adalah potongan sebuah nama dari Khabane Lame dan Issac Newton dan terbentuklah nama Khabane Newton, dan besoknya saya membuat hampir semua nama akun saya Khabane Newton dan nama asli saya adalah "A" cari sendiri ya, dan ya nama Khabane Newton telah Terkenal  sekian blog pertama saya, sekian terimakasih
             DONASI WOI BIAR OWNERNYA BAHAGIA YGY </p>
-<html>
+<html lang="id">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contoh</title>
 <style>
 body, html {
 margin: 0;
@@ -84,31 +87,88 @@ font-family: Arial, sans-serif;
 margin-left: 0;
 padding-left: 0;
 width: 100%;
-min-height: 100vh;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+min-height: 100vh;
 }
 
-.content {
+.main-content {
 flex: 1;
+padding: 20px;
 }
 
-.footer {
+footer {
 text-align: center;
-padding: 7px;
-background-color: #f1f1f1;
+padding: 10px;
+background-color: var(--footer-bg, #f1f1f1);
+color: var(--footer-text, #000);
+position: relative;
+bottom: 0;
+width: 100%;
+}
+
+.light-mode {
+--bg-color: #fff;
+--text-color: #000;
+--footer-bg: #f1f1f1;
+--footer-text: #000;
+}
+
+.dark-mode {
+--bg-color: #333;
+--text-color: #fff;
+--footer-bg: #444;
+--footer-text: #fff;
+}
+
+body {
+background-color: var(--bg-color);
+color: var(--text-color);
+}
+
+.toggle-btn {
+padding: 10px 20px;
+margin: 10px;
+cursor: pointer;
+border: none;
+background-color: var(--btn-bg, #000);
+color: var(--btn-text, #fff);
+border-radius: 5px;
+}
+
+.light-mode .toggle-btn {
+--btn-bg: #000;
+--btn-text: #fff;
+}
+
+.dark-mode .toggle-btn {
+--btn-bg: #fff;
+--btn-text: #000;
 }
 </style>
 </head>
-<body>
+<body class="light-mode">
 <div class="container">
-<div class="content">
+<button class="toggle-btn" onclick="toggleMode()">Tampilan Gelap / Terang</button>
+<div class="main-content">
 <!-- isi konten disini -->
-<h2> © 2024 KhabaneNewton. Hak Cipta Dilindungi. </h2>
+© 2024 KhabaneNewton. Hak Cipta Dilindungi.
 </div>
-<div class="footer">
+<footer>
+© 2024 KhabaneNewton. Hak Cipta Dilindungi.
+</footer>
 </div>
-</div>
+
+<script>
+function toggleMode() {
+const body = document.body;
+body.classList.toggle('dark-mode');
+if (body.classList.contains('dark-mode')) {
+body.classList.remove('light-mode');
+} else {
+body.classList.add('light-mode');
+}
+}
+</script>
 </body>
 </html>
