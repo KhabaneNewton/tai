@@ -88,7 +88,7 @@
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        margin: 4px 2px;
+        margin: 6px 2px;
         cursor: pointer;
         border-radius: 12px;
         }
