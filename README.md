@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -74,7 +73,6 @@
         </div>
     <footer>
         <p>&copy; 2024 Khabane Newton. All rights reserved</p>
-        <!DOCTYPE html>
         <html lang="en">
         <head>
         <meta charset="UTF-8">
