@@ -72,9 +72,27 @@
         </p>
         </div>
     <footer>
+<html>
+<head>
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<div class="container">
         <p>&copy; 2024 Khabane Newton. All rights reserved</p>
         <html lang="en">
-        <head>
+        <body>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Google Form Button</title>
@@ -98,5 +116,6 @@
         
         <h2>Kritik Dan Saran</h2>
         <a href="https://forms.gle/4eLQJZ6MjQw28vvd9" class="button">Klik Saya untuk kritik dan saran</a>
+</div>
 </body>
 </html>
