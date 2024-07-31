@@ -64,11 +64,52 @@
             <a href="https://khabanenewton.blogspot.com/" target="blank">Website Blog saya</a>
             <a href="https://discord.gg/UtKdcnf2rZ" target="_blank">discord server</a>
             <a href="https://sociabuzz.com/khabane_newton/tribe" target="_blank">Sociabuzz</a>
-            <a hrief="https://forms.gle/4eLQJZ6MjQw28vvd9" target="_blank">Kritik Dan Saran</a>
+            <a href="https://forms.gle/4eLQJZ6MjQw28vvd9" target="_blank">Kritik Dan Saran</a>
          </div>
     <div class="content">
         <h2>Sejarah terbentuknya nama KhabaneNewton</h2>
         <p> di suatu hari, pada hari Senin-Minggu pada saat saya lagi boker tiba-tiba kepikiran nama samaran baru dan hatiku berkata "mau pake nama samaran apa ya?? ohh ya Khabane Newton", Khabane Newton itu Adalah potongan sebuah nama dari Khabane Lame dan Issac Newton dan terbentuklah nama Khabane Newton, dan besoknya saya membuat hampir semua nama akun saya Khabane Newton dan nama asli saya adalah "A" cari sendiri ya, dan ya nama Khabane Newton telah Terkenal  sekian blog pertama saya, sekian terimakasih
             DONASI WOI BIAR OWNERNYA BAHAGIA YGY </p>
-        </p>
-        </div>
+        <!DOCTYPE html>
+<html>
+<head>
+<style>
+body, html {
+margin: 0;
+padding: 0;
+width: 100%;
+font-family: Arial, sans-serif;
+}
+
+.container {
+margin-left: 0;
+padding-left: 0;
+width: 100%;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.content {
+flex: 1;
+}
+
+.footer {
+text-align: center;
+padding: 7px;
+background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="content">
+<!-- isi konten disini -->
+<h2> © 2024 KhabaneNewton. Hak Cipta Dilindungi. </h2>
+</div>
+<div class="footer">
+</div>
+</div>
+</body>
+</html>
