@@ -92,8 +92,8 @@
     
     #toggle-theme-btn {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 80px; /* Geser lebih tinggi dari footer */
+    right: 20px; /* Geser lebih jauh dari tepi */
     background-color: #333;
     color: white;
     padding: 10px 20px;
@@ -105,11 +105,27 @@
     #toggle-theme-btn:hover {
     background-color: #444;
     }
+    
+    footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    }
     </style>
     </head>
     <body>
     
     <button id="toggle-theme-btn">Tema Gelap</button>
+    
+    <footer>
+    <p>&copy; 2024 KhabaneNewton Hak Cipta Di Lindungi.</p>
+    </footer>
     
     <script>
     function applyTheme(themeName) {
