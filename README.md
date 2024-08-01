@@ -71,104 +71,75 @@
         <p> di suatu hari, pada hari Senin-Minggu pada saat saya lagi boker tiba-tiba kepikiran nama samaran baru dan hatiku berkata "mau pake nama samaran apa ya?? ohh ya Khabane Newton", Khabane Newton itu Adalah potongan sebuah nama dari Khabane Lame dan Issac Newton dan terbentuklah nama Khabane Newton, dan besoknya saya membuat hampir semua nama akun saya Khabane Newton dan nama asli saya adalah "A" cari sendiri ya, dan ya nama Khabane Newton telah Terkenal  sekian blog pertama saya, sekian terimakasih
             DONASI WOI BIAR OWNERNYA BAHAGIA YGY </p>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contoh</title>
-<style>
-body, html {
-margin: 0;
-padding: 0;
-width: 100%;
-font-family: Arial, sans-serif;
-}
-
-.container {
-margin-left: 0;
-padding-left: 0;
-width: 100%;
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-}
-
-.main-content {
-flex: 1;
-padding: 20px;
-}
-
-footer {
-text-align: center;
-padding: 10px;
-background-color: var(--footer-bg, #f1f1f1);
-color: var(--footer-text, #000);
-position: relative;
-bottom: 0;
-width: 100%;
-}
-
-.light-mode {
---bg-color: #fff;
---text-color: #000;
---footer-bg: #f1f1f1;
---footer-text: #000;
-}
-
-.dark-mode {
---bg-color: #333;
---text-color: #fff;
---footer-bg: #444;
---footer-text: #fff;
-}
-
-body {
-background-color: var(--bg-color);
-color: var(--text-color);
-}
-
-.toggle-btn {
-padding: 10px 20px;
-margin: 10px;
-cursor: pointer;
-border: none;
-background-color: var(--btn-bg, #000);
-color: var(--btn-text, #fff);
-border-radius: 5px;
-}
-
-.light-mode .toggle-btn {
---btn-bg: #000;
---btn-text: #fff;
-}
-
-.dark-mode .toggle-btn {
---btn-bg: #fff;
---btn-text: #000;
-}
-</style>
-</head>
-<body class="light-mode">
-<div class="container">
-<button class="toggle-btn" onclick="toggleMode()">Tampilan Gelap / Terang</button>
-<div class="main-content">
-<!-- isi konten disini -->
-Jangan lupa Subscribe Dan Donasi 1 Subscribe atau 1 Donasi = 1000 pahala buat kalian
-</div>
-<footer>
-© 2024 KhabaneNewton. Hak Cipta Dilindungi.
-</footer>
-</div>
-
-<script>
-function toggleMode() {
-const body = document.body;
-body.classList.toggle('dark-mode');
-if (body.classList.contains('dark-mode')) {
-body.classList.remove('light-mode');
-} else {
-body.classList.add('light-mode');
-}
-}
-</script>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Tema Gelap</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    }
+    
+    body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+    }
+    
+    #toggle-theme-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+    
+    #toggle-theme-btn:hover {
+    background-color: #444;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <button id="toggle-theme-btn">Tema Gelap</button>
+    
+    <script>
+    function applyTheme(themeName) {
+    document.body.className = themeName;
+    localStorage.setItem('theme', themeName);
+    }
+    
+    document.getElementById('toggle-theme-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    let currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark-mode') {
+    applyTheme('');
+    this.textContent = 'Tema Gelap';
+    } else {
+    applyTheme('dark-mode');
+    this.textContent = 'Tema Terang';
+    }
+    });
+    
+    // Pas halaman di-load, cek setting tema di local storage
+    document.addEventListener('DOMContentLoaded', function() {
+    let currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark-mode') {
+    applyTheme('dark-mode');
+    document.getElementById('toggle-theme-btn').textContent = 'Tema Terang';
+    } else {
+    document.getElementById('toggle-theme-btn').textContent = 'Tema Gelap';
+    }
+    });
+    </script>
+    
+    </body>
+    </html>
