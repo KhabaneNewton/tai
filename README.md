@@ -152,7 +152,7 @@ border-radius: 5px;
 <button class="toggle-btn" onclick="toggleMode()">Tampilan Gelap / Terang</button>
 <div class="main-content">
 <!-- isi konten disini -->
-© 2024 KhabaneNewton. Hak Cipta Dilindungi.
+Jangan lupa Subscribe Dan Donasi 1 Subscribe atau 1 Donasi = 1000 pahala buat kalian
 </div>
 <footer>
 © 2024 KhabaneNewton. Hak Cipta Dilindungi.
