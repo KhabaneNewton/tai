@@ -71,6 +71,7 @@
         <p> di suatu hari, pada hari Senin-Minggu pada saat saya lagi boker tiba-tiba kepikiran nama samaran baru dan hatiku berkata "mau pake nama samaran apa ya?? ohh ya Khabane Newton", Khabane Newton itu Adalah potongan sebuah nama dari Khabane Lame dan Issac Newton dan terbentuklah nama Khabane Newton, dan besoknya saya membuat hampir semua nama akun saya Khabane Newton dan nama asli saya adalah "A" cari sendiri ya, dan ya nama Khabane Newton telah Terkenal  sekian blog pertama saya, sekian terimakasih
             DONASI WOI BIAR OWNERNYA BAHAGIA YGY </p>
 <html lang="id">
+    <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -105,7 +106,7 @@ body.light-mode .container {
 background-color: #f0f0f0; /* Tema Terang Container */
 }
 
-h1 {
+h1, h2 {
 text-align: center;
 color: #bd93f9; /* Warna Judul */
 }
@@ -119,6 +120,7 @@ border: 1px solid #bd93f9;
 margin-bottom: 10px;
 padding: 15px;
 border-radius: 5px;
+transition: background-color 0.5s ease-in-out;
 }
 .video-item h3 {
 margin: 0 0 10px 0;
@@ -155,9 +157,12 @@ color: #000000;
 <body class="dark-mode">
 <button id="theme-switch">🌙</button>
 <div class="container">
-<h1>Video Terbaru dan Terlama dari Khabane Newton Official</h1>
+    <h1>Video Terbaru dan Terlama dari Khabane Newton Official</h1>
 <h2>Video Terbaru</h2>
 <ul class="video-list" id="latest-videos"></ul>
+<h2>Video Terlama</h2>
+<ul class="video-list" id="oldest-videos"></ul>
+</div>
 <script>
 const apiKey = 'AIzaSyBSZp1QSxhI2ys7DdIs3dhQ-VUtmaNNBJ0';
 const channelId = 'UCnHbiarag20EzIjSXDl0tJA'; // Ganti dengan ID Channel sesuai
@@ -180,7 +185,10 @@ videoList.appendChild(videoItem);
 });
 }
 
+// Fetch latest videos
 fetchVideos('date', 'latest-videos');
+
+// Fetch oldest videos (using 'date' for demonstration - can customize)
 fetchVideos('date', 'oldest-videos');
 
 const themeSwitch = document.getElementById('theme-switch');
