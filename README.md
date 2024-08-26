@@ -71,90 +71,125 @@
         <p> di suatu hari, pada hari Senin-Minggu pada saat saya lagi boker tiba-tiba kepikiran nama samaran baru dan hatiku berkata "mau pake nama samaran apa ya?? ohh ya Khabane Newton", Khabane Newton itu Adalah potongan sebuah nama dari Khabane Lame dan Issac Newton dan terbentuklah nama Khabane Newton, dan besoknya saya membuat hampir semua nama akun saya Khabane Newton dan nama asli saya adalah "A" cari sendiri ya, dan ya nama Khabane Newton telah Terkenal  sekian blog pertama saya, sekian terimakasih
             DONASI WOI BIAR OWNERNYA BAHAGIA YGY </p>
 <html lang="id">
-    <html lang="id">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle Tema Gelap</title>
-    <style>
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s, color 0.3s;
-    }
-    
-    body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-    }
-    
-    #toggle-theme-btn {
-    position: fixed;
-    bottom: 80px; /* Geser lebih tinggi dari footer */
-    right: 20px; /* Geser lebih jauh dari tepi */
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    }
-    
-    #toggle-theme-btn:hover {
-    background-color: #444;
-    }
-    
-    footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    }
-    </style>
-    </head>
-    <body>
-    
-    <button id="toggle-theme-btn">Tema Gelap</button>
-    
-    <footer>
-    <p>&copy; 2024 KhabaneNewton Hak Cipta Di Lindungi.</p>
-    </footer>
-    
-    <script>
-    function applyTheme(themeName) {
-    document.body.className = themeName;
-    localStorage.setItem('theme', themeName);
-    }
-    
-    document.getElementById('toggle-theme-btn').addEventListener('click', function(e) {
-    e.preventDefault();
-    let currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark-mode') {
-    applyTheme('');
-    this.textContent = 'Tema Gelap';
-    } else {
-    applyTheme('dark-mode');
-    this.textContent = 'Tema Terang';
-    }
-    });
-    
-    // Pas halaman di-load, cek setting tema di local storage
-    document.addEventListener('DOMContentLoaded', function() {
-    let currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark-mode') {
-    applyTheme('dark-mode');
-    document.getElementById('toggle-theme-btn').textContent = 'Tema Terang';
-    } else {
-    document.getElementById('toggle-theme-btn').textContent = 'Tema Gelap';
-    }
-    });
-    </script>
-    
-    </body>
-    </html>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Terbaru dan Terlama dari Khabane Newton Official</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+body.light-mode {
+background-color: #ffffff; /* Tema Terang */
+color: #000000; /* Teks Gelap */
+}
+body.dark-mode {
+background-color: #282a36; /* Tema Gelap */
+color: #ffffff; /* Teks Terang */
+}
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+background-color: #44475a; /* Tema Gelap Container */
+border-radius: 8px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+transition: background-color 0.5s ease-in-out;
+}
+
+body.light-mode .container {
+background-color: #f0f0f0; /* Tema Terang Container */
+}
+
+h1 {
+text-align: center;
+color: #bd93f9; /* Warna Judul */
+}
+.video-list {
+list-style: none;
+padding: 0;
+}
+.video-item {
+background: #6272a4; /* Warna Latar Item */
+border: 1px solid #bd93f9;
+margin-bottom: 10px;
+padding: 15px;
+border-radius: 5px;
+}
+.video-item h3 {
+margin: 0 0 10px 0;
+font-size: 20px;
+}
+.video-item a {
+text-decoration: none;
+color: #50fa7b; /* Warna Tautan */
+}
+body.light-mode .video-item {
+background: #dcdcdc; /* Tema Terang Item */
+border: 1px solid #aaaaaa; /* Border Tema Terang */
+color: #000000; /* Teks Gelap */
+}
+
+#theme-switch {
+position: fixed;
+bottom: 20px;  /* Letak di kanan bawah */
+right: 20px;  /* Letak di kanan bawah */
+padding: 10px;
+background: #44475a; /* Warna Tombol Gelap */
+color: #ffffff;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+body.light-mode #theme-switch {
+background: #f0f0f0; /* Warna Tombol Terang */
+color: #000000;
+}
+</style>
+</head>
+<body class="dark-mode">
+<button id="theme-switch">🌙</button>
+<div class="container">
+<h1>Video Terbaru dan Terlama dari Khabane Newton Official</h1>
+<h2>Video Terbaru</h2>
+<ul class="video-list" id="latest-videos"></ul>
+<script>
+const apiKey = 'AIzaSyBSZp1QSxhI2ys7DdIs3dhQ-VUtmaNNBJ0';
+const channelId = 'UCnHbiarag20EzIjSXDl0tJA'; // Ganti dengan ID Channel sesuai
+
+async function fetchVideos(order, elementId) {
+const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=${order}&maxResults=5`);
+const data = await response.json();
+
+const videoList = document.getElementById(elementId);
+videoList.innerHTML = '';
+
+data.items.forEach(item => {
+const videoItem = document.createElement('li');
+videoItem.className = 'video-item';
+videoItem.innerHTML = `
+<h3>${item.snippet.title}</h3>
+<a href="https://www.youtube.com/watch?v=${item.id.videoId}" target="_blank">Tonton Video</a>
+`;
+videoList.appendChild(videoItem);
+});
+}
+
+fetchVideos('date', 'latest-videos');
+fetchVideos('date', 'oldest-videos');
+
+const themeSwitch = document.getElementById('theme-switch');
+themeSwitch.addEventListener('click', () => {
+document.body.classList.toggle('dark-mode');
+document.body.classList.toggle('light-mode');
+themeSwitch.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
+});
+</script>
+</body>
+</html>
