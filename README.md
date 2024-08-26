@@ -71,7 +71,6 @@
         <p> di suatu hari, pada hari Senin-Minggu pada saat saya lagi boker tiba-tiba kepikiran nama samaran baru dan hatiku berkata "mau pake nama samaran apa ya?? ohh ya Khabane Newton", Khabane Newton itu Adalah potongan sebuah nama dari Khabane Lame dan Issac Newton dan terbentuklah nama Khabane Newton, dan besoknya saya membuat hampir semua nama akun saya Khabane Newton dan nama asli saya adalah "A" cari sendiri ya, dan ya nama Khabane Newton telah Terkenal  sekian blog pertama saya, sekian terimakasih
             DONASI WOI BIAR OWNERNYA BAHAGIA YGY </p>
 <html lang="id">
-    <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
