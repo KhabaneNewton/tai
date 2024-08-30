@@ -1,122 +1,4 @@
-<!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Khabane Newton</title>
-  <style>
-      body {
-      font-family: Arial, sans-serif;
-      background-color: #282a36;
-      color: #ffffff;
-      margin: 0;
-      padding: 0;
-      }
-      .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #44475a;
-      border-radius: 8px;
-      }
-      header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 0 10px 0;
-      }
-      header h1 {
-      margin: 0;
-      color: #bd93f9;
-      padding: 5px 0;
-      }
-      nav {
-      padding: 10px 0;
-      }
-      nav a {
-      margin: 0 10px;
-      color: #50fa7b;
-      text-decoration: none;
-      }
-      nav a:hover {
-      text-decoration: underline;
-      }
-      main {
-      padding: 20px 0;
-      }
-      main h2 {
-      color: #bd93f9;
-      }
-      #readme-content {
-      background: #6272a4;
-      border: 1px solid #bd93f9;
-      padding: 15px;
-      border-radius: 5px;
-      color: #ffffff;
-      margin-bottom: 20px;
-      }
-      .video-list {
-      list-style: none;
-      padding: 0;
-      }
-      .video-item {
-      background: #6272a4;
-      border: 1px solid #bd93f9;
-      margin-bottom: 10px;
-      padding: 15px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      }
-      .video-item h3 {
-      margin: 0;
-      font-size: 20px;
-      color: #ffffff;
-      }
-      .video-item a {
-      color: #50fa7b;
-      text-decoration: none;
-      }
-      .video-item a:hover {
-      text-decoration: underline;
-      }
-      footer {
-      text-align: center;
-      padding: 10px 0;
-      background-color: #44475a;
-      color: #ffffff;
-      }
-      #theme-switch {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      padding: 10px;
-      background: #44475a;
-      color: #ffffff;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-      }
-      body.light-mode #theme-switch {
-      background: #f0f0f0;
-      color: #000000;
-      }
-  </style>
-</head>
-<body>
-
-<div class="container">
-  <header>
-    <h1>Tentang Khabane Newton</h1>
-    <nav>
-    </nav>
-  </header>
-
-  <main>
-    <section id="readme-content">
-      <h2>Berbagai Platform Media Sosial</h2>
-      <div>
-        <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -169,7 +51,7 @@
 </head>
 <body>
     <header>
-        <h1>Website Resmi</h1>
+        <h1>Tentang Khabane Newton</h1>
     </header>
     <div class="content">
         <h2>Halo, Saya KhabaneNewton!</h2>
@@ -189,7 +71,6 @@
         <p> di suatu hari, pada hari Senin-Minggu pada saat saya lagi boker tiba-tiba kepikiran nama samaran baru dan hatiku berkata "mau pake nama samaran apa ya?? ohh ya Khabane Newton", Khabane Newton itu Adalah potongan sebuah nama dari Khabane Lame dan Issac Newton dan terbentuklah nama Khabane Newton, dan besoknya saya membuat hampir semua nama akun saya Khabane Newton dan nama asli saya adalah "A" cari sendiri ya, dan ya nama Khabane Newton telah Terkenal  sekian blog pertama saya, sekian terimakasih
             DONASI WOI BIAR OWNERNYA BAHAGIA YGY </p>
 <html lang="id">
-    <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -315,60 +196,6 @@ document.body.classList.toggle('dark-mode');
 document.body.classList.toggle('light-mode');
 themeSwitch.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
 });
-</script>
-</body>
-</html>
-
-        <p>Selamat datang di website resmi Khabane Newton Official! Situs ini didedikasikan untuk semua penggemar dan pengikut Khabane Newton, seorang kreator konten yang menginspirasi, musisi berbakat, dan motivator yang telah memberikan dampak positif melalui karya-karyanya.</p>
-      </div>
-    </section>
-
-    <section id="video-terbaru">
-      <h2>Video Terbaru dan Terlama dari Khabane Newton Official</h2>
-      <ul class="video-list" id="latest-videos">
-        <!-- Tambahin video terbaru di sini -->
-      </ul>
-      <ul class="video-list" id="oldest-videos">
-        <!-- Tambahin video terlama di sini -->
-      </ul>
-    </section>
-  </main>
-
-<script>
-  const themeSwitch = document.getElementById('theme-switch');
-  themeSwitch.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    document.body.classList.toggle('light-mode');
-    themeSwitch.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
-  });
-  
-  const apiKey = 'YOUR_API_KEY';
-  const channelId = 'UCmj4Y7YCFQdVIaI2KQQm0KA'; // Ganti dengan ID Channel sesuai
-  
-  async function fetchVideos(order, elementId) {
-    []
-    const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=${order}&maxResults=5`);
-    const data = await response.json();
-  
-    const videoList = document.getElementById(elementId);
-    videoList.innerHTML = '';
-  
-    data.items.forEach(item => {
-      const videoItem = document.createElement('li');
-      videoItem.className = 'video-item';
-      videoItem.innerHTML = `
-        <h3>${item.snippet.title}</h3>
-        <a href="https://www.youtube.com/watch?v=${item.id.videoId}" target="_blank">Tonton Video</a>
-      `;
-      videoList.appendChild(videoItem);
-    });
-  }
-  
-  // Fetch latest videos
-  fetchVideos('date', 'latest-videos');
-  
-  // Fetch oldest videos (using 'date' for demonstration - can customize)
-  fetchVideos('date', 'oldest-videos');
 </script>
 </body>
 </html>
