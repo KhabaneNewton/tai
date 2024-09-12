@@ -24,7 +24,7 @@ Back-End (Opsional): Jika diperlukan, teknologi seperti Node.js dan Express.js d
 Database (Opsional): Penyimpanan data menggunakan MongoDB atau SQL untuk skalabilitas dan keandalannya.
 
 Kontak
-Untuk informasi lebih lanjut, kolaborasi, atau pertanyaan, kunjungi halaman kontak atau kirimkan email ke [contact@example.com]. Kami sangat menantikan untuk berinteraksi dan bekerja sama dengan Anda.
+Untuk informasi lebih lanjut, kolaborasi, atau pertanyaan, kunjungi halaman kontak atau kirimkan email ke [khabanenewtonofficial@gmail.com]. Kami sangat menantikan untuk berinteraksi dan bekerja sama dengan Anda.
 
 ---
 
